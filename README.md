@@ -17,6 +17,8 @@
 ![](http://7xawrk.com1.z0.glb.clouddn.com/CDUlibrary_mail1.png)
 
 提醒邮件如下面有图所示，在邮件的平台适应性上我下了很大功夫，目前已经适应了绝大部分的邮件客户端。另外不要问我为什么那么难看
+
+
 ![](http://7xawrk.com1.z0.glb.clouddn.com/CDUlibrary_mail2.png)
 
 ##是否还有除了邮件之外的通知方式
