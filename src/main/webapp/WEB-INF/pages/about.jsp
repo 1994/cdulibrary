@@ -121,6 +121,7 @@
                 </div>
                 </p>
                 <p>提醒邮件如上面有图所示，在邮件的平台适应性上我下了很大功夫，目前已经适应了绝大部分的邮件客户端。另外不要问我为什么那么难看</p>
+                <p>另外，邮件会在每天的八点钟开始发送</p>
                 <br>
 
                 <h3>#为什么不推荐使用QQ邮箱</h3>
@@ -146,6 +147,11 @@
                 </ul>
                 <br>
 
+                <h3>#这个网站的原理是</h3>
+                <hr>
+                <p>这个项目是开源的，遵循<a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License 2.0协议</a>，目前托管在<a href="https://github.com/1994/cdulibrary">github上</a>，如果你有兴趣参与开发，可以Fork并Pull&Request,如果你认可我的劳动，也希望能给我一个Star。</p>
+                <br>
+
                 <h3>#感谢</h3>
                 <hr>
                 <p>这个项目使用了以下免费资源或者服务，在此表示由衷的感谢</p>
@@ -155,6 +161,8 @@
                             href="http://git.oschina.net/free/spring-framework-reference">Spring文档翻译项目</a></span></li>
                     <li><a href="http://www.mailgun.com/">Mailgun</a></li>
                     <li><a href="https://sendcloud.sohu.com/">SendCloud</a></li>
+                    <li><a href="https://github.com/alibaba/fastjson">fastjson</a></li>
+                    <li><a href="https://github.com/alibaba/druid/">druid</a></li>
                     <li><a href="http://getbootstrap.com/">bootstrap</a></li>
                     <li><a href="http://www.qiniu.com/">QINIU</a></li>
                 </ul>

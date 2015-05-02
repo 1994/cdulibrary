@@ -15,6 +15,7 @@ import service.UserService;
 import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Pattern;
 
 /**
  * Created by reeco_000 on 2015/4/18.
@@ -66,10 +67,7 @@ public class UserAction {
                 books.clear();
             books = userHttpService.getBooks(username, password);
             setBooks(books);
-            // model.addAttribute("books", books);
             request.getSession().setAttribute("books", books);
-            //   redirectAttributes.addAttribute("books",books);
-//            System.out.println(books.size());
             return "redirect:/user/book";
         } else {
             System.out.println("密码错误");
@@ -81,8 +79,13 @@ public class UserAction {
 
     @RequestMapping(method = RequestMethod.POST, value = "/add")
     public String add(HttpServletRequest request, RedirectAttributes redirectAttributes) {
-
+        String pattern = "[\\w!#$%&'*+/=?^_`{|}~-]+(?:\\.[\\w!#$%&'*+/=?^_`{|}~-]+)*@(?:[\\w](?:[\\w-]*[\\w])?\\.)+[\\w](?:[\\w-]*[\\w])?";
         String email = request.getParameter("email");
+        Boolean emailCheck = Pattern.compile(pattern).matcher(email).matches();
+        if(!emailCheck){
+            redirectAttributes.addFlashAttribute("message", "请输入正确的邮箱格式");
+            return "redirect:/user/book";
+        }
         User user = (User) request.getSession().getAttribute("sUser");
         user.setEmail(email);
         user.setFlag(1);
