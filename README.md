@@ -1,6 +1,6 @@
 # cdulibrary
 成都大学图书提醒服务
-目前托管在http://cdulibrary.aliapp.com/
+目前运行在http://cdulibrary.aliapp.com/
 
 ##这是一个什么网站
 这个网站是我在业余时间独立完成并维护的，目前完成了几下功能：
@@ -31,6 +31,8 @@
  - Spring
  - Mailgun
  - SendCloud
+ - fastjson
+ - druid
  - QINIU
 
 ##暂时只想到那么多，以后填坑
